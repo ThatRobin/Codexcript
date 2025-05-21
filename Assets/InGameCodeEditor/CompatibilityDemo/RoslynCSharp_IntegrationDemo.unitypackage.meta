@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e8128a639ccf0b74e8538a1902583b0c
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144254
+  packageName: InGame Code Editor
+  packageVersion: 1.1.4
+  assetPath: Assets/InGameCodeEditor/CompatibilityDemo/RoslynCSharp_IntegrationDemo.unitypackage
+  uploadId: 671747

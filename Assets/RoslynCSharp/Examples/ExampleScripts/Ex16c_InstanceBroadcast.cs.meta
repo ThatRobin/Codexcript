@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: dd0e8a50241d3b74fac308cb877fa13c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/Examples/ExampleScripts/Ex16c_InstanceBroadcast.cs
+  uploadId: 740226

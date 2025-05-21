@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4fd1ce3a61e5631478883e158c51892b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144254
+  packageName: InGame Code Editor
+  packageVersion: 1.1.4
+  assetPath: Assets/InGameCodeEditor/SyntaxHighlighting/C# Syntax.asset
+  uploadId: 671747

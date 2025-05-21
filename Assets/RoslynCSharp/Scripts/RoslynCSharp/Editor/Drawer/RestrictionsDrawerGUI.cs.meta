@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1d0cfb32c1186094f92b342f5426c983
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/Scripts/RoslynCSharp/Editor/Drawer/RestrictionsDrawerGUI.cs
+  uploadId: 740226

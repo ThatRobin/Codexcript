@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 86e98bc54d162724cb4139b962fcbbf6
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/Plugin/System.Runtime.CompilerServices.Unsafe.xml
+  uploadId: 740226

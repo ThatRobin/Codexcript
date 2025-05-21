@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5aee9bce97ce92f48b2d6cf18dbe96f9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/AssemblyReferences/mscorlib.asset
+  uploadId: 740226

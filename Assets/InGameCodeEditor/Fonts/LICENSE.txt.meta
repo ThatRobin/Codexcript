@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e2e12da2dc9fc02468503b968a40411c
+timeCreated: 1512071443
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144254
+  packageName: InGame Code Editor
+  packageVersion: 1.1.4
+  assetPath: Assets/InGameCodeEditor/Fonts/LICENSE.txt
+  uploadId: 671747

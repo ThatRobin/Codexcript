@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a6cd83dabfea8024b94edf946cb5e622
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.1
+  assetPath: Assets/RoslynCSharp/Error On Import.txt
+  uploadId: 700741

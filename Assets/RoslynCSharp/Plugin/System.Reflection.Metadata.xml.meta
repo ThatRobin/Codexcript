@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b89193fd5c5e30442bda0b82b126e3b0
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/Plugin/System.Reflection.Metadata.xml
+  uploadId: 740226

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3b80760f02dbf4c49addced06689a311
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.1
+  assetPath: Assets/RoslynCSharp/2020 & Older Compatibility Package.unitypackage
+  uploadId: 700741

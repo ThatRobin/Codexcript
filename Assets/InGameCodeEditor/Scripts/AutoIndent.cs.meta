@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b5c8e3efd8e349f4b9f01e383a885f6e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144254
+  packageName: InGame Code Editor
+  packageVersion: 1.1.4
+  assetPath: Assets/InGameCodeEditor/Scripts/AutoIndent.cs
+  uploadId: 671747

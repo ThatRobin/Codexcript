@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c0a14c191830827479ac2ec50db4e817
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/Examples/ExampleScripts/Ex15_InstanceFields.cs
+  uploadId: 740226

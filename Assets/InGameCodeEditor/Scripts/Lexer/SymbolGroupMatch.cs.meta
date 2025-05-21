@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 66cbe3b6313b9ee48b1a67f5cc336cbf
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144254
+  packageName: InGame Code Editor
+  packageVersion: 1.1.4
+  assetPath: Assets/InGameCodeEditor/Scripts/Lexer/SymbolGroupMatch.cs
+  uploadId: 671747

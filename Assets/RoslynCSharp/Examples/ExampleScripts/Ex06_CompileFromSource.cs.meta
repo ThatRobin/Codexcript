@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 57d5cfd41135da541b009594d3ff3202
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/Examples/ExampleScripts/Ex06_CompileFromSource.cs
+  uploadId: 740226

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 83e675e94d238f641a38098b8848d417
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/Examples/ExampleScripts/Ex14_InstanceMethods.cs
+  uploadId: 740226

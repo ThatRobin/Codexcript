@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 82e3b9ea448276b4f8fc6f858441a8bb
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/Examples/EscapeTheMazeExample.unity
+  uploadId: 740226

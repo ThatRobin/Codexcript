@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 726513252c23c024c9ceb61ea9952cfd
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144254
+  packageName: InGame Code Editor
+  packageVersion: 1.1.4
+  assetPath: Assets/InGameCodeEditor/CompatibilityDemo/IMPORTANT.txt
+  uploadId: 671747

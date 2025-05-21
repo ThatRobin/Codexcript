@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
+  m_Name: TestGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Test
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: d1fe0f51-81c4-4486-868d-8e2d48db3fb5
+    <Name>k__BackingField: Test
+    <Text>k__BackingField: Hello!
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 4440f354-d9fa-41f0-bbca-6d62cf542fba
+    <Character>k__BackingField: {fileID: 11400000, guid: 6b7dfc7d099b8c247b1c0942fc780ec0, type: 2}
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 132, y: 141}
+  - <ID>k__BackingField: 4440f354-d9fa-41f0-bbca-6d62cf542fba
+    <Name>k__BackingField: Test2
+    <Text>k__BackingField: Hi!
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <Character>k__BackingField: {fileID: 11400000, guid: 75027cd6375075e438c71515c7049ec0, type: 2}
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 488, y: 141}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - Test
+  - Test2
+  <OldGroupedNodeNames>k__BackingField:
+    list: []

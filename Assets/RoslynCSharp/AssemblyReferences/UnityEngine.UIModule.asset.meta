@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e926a68b2b20b4a49b56d48786be169b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/AssemblyReferences/UnityEngine.UIModule.asset
+  uploadId: 740226

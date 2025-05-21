@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
+  m_Name: ConversationGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Conversation
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 7441cfba-c979-4997-adf6-c06c09815fd1
+    <Name>k__BackingField: YesResponse1
+    <Text>k__BackingField: Yes!
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: fde21a9a-36c1-4627-a5a4-27b53d80c079
+    <Character>k__BackingField: {fileID: 11400000, guid: 75027cd6375075e438c71515c7049ec0, type: 2}
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 363, y: 54}
+  - <ID>k__BackingField: 30c4f5b7-426d-4956-b4ac-8a810f3883e5
+    <Name>k__BackingField: NoResponse1
+    <Text>k__BackingField: No.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 58ac7ba2-6c43-4900-b396-e14c74ffec5e
+    <Character>k__BackingField: {fileID: 11400000, guid: 75027cd6375075e438c71515c7049ec0, type: 2}
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 363, y: 299}
+  - <ID>k__BackingField: fde21a9a-36c1-4627-a5a4-27b53d80c079
+    <Name>k__BackingField: YesResponse2
+    <Text>k__BackingField: Me too!
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <Character>k__BackingField: {fileID: 11400000, guid: 6b7dfc7d099b8c247b1c0942fc780ec0, type: 2}
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 799, y: 54}
+  - <ID>k__BackingField: 58ac7ba2-6c43-4900-b396-e14c74ffec5e
+    <Name>k__BackingField: NoResponse2
+    <Text>k__BackingField: Perish.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <Character>k__BackingField: {fileID: 11400000, guid: 6b7dfc7d099b8c247b1c0942fc780ec0, type: 2}
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 799, y: 299}
+  - <ID>k__BackingField: 1f9c74d0-f7ae-41fd-a3da-40a52ee369d8
+    <Name>k__BackingField: Question
+    <Text>k__BackingField: Do you like cheese?
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Yes!
+      <NodeID>k__BackingField: 7441cfba-c979-4997-adf6-c06c09815fd1
+    - <Text>k__BackingField: No.
+      <NodeID>k__BackingField: 30c4f5b7-426d-4956-b4ac-8a810f3883e5
+    <Character>k__BackingField: {fileID: 11400000, guid: 6b7dfc7d099b8c247b1c0942fc780ec0, type: 2}
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: -92, y: 132}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - YesResponse1
+  - NoResponse1
+  - YesResponse2
+  - NoResponse2
+  - Question
+  <OldGroupedNodeNames>k__BackingField:
+    list: []

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3a412968f435af34f8c2bcd47418b3fa
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/UserGuide.pdf
+  uploadId: 740226

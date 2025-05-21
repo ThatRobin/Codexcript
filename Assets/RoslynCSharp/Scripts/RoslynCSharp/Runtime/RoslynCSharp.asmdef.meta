@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 82ccc7faf9a0ce8478430010c631dc89
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/Scripts/RoslynCSharp/Runtime/RoslynCSharp.asmdef
+  uploadId: 740226

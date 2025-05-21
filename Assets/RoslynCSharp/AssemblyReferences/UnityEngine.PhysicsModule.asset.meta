@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e877e94ac5f9c7c4192a879696d5e5d8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/AssemblyReferences/UnityEngine.PhysicsModule.asset
+  uploadId: 740226

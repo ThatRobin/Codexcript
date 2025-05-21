@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 047def5916b8efd4788cdf202f1c502e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/AssemblyReferences/UnityEngine.ParticleSystemModule.asset
+  uploadId: 740226

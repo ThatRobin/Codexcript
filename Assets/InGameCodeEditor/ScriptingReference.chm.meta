@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cb6aa62da598be04cadc6e4a148ec91e
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144254
+  packageName: InGame Code Editor
+  packageVersion: 1.1.4
+  assetPath: Assets/InGameCodeEditor/ScriptingReference.chm
+  uploadId: 671747

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a64a109482a98b0418808edb1e5f62d2
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144254
+  packageName: InGame Code Editor
+  packageVersion: 1.1.4
+  assetPath: Assets/InGameCodeEditor/CodeEditorWithMenuExample.unity
+  uploadId: 671747

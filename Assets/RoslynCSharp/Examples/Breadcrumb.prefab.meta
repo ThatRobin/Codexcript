@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b94e5b66f8472584ca92a251df335b25
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142753
+  packageName: Roslyn C# - Runtime Compiler
+  packageVersion: 1.9.2
+  assetPath: Assets/RoslynCSharp/Examples/Breadcrumb.prefab
+  uploadId: 740226

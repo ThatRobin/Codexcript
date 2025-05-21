@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 697e9ffc3e7884c42ba312d537bb91db
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144254
+  packageName: InGame Code Editor
+  packageVersion: 1.1.4
+  assetPath: Assets/InGameCodeEditor/SyntaxHighlighting/MiniScript Syntax.asset
+  uploadId: 671747
