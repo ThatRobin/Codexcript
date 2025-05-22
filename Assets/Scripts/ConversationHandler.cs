@@ -106,24 +106,25 @@ public class ConversationHandler : MonoBehaviour {
 			yield return new WaitForSeconds(10 - textSpeed);
 		}
 		showText();
-		yield break;
 	}
 
 	public void onOptionSelect(int choiceIndex) {
 		actualText = "";
 		index = 0;
 
-		DSDialogueSO nextDialogue = currentDialogue.Choices[choiceIndex].NextDialogue;
+		if (currentDialogue != null) {
+			DSDialogueSO nextDialogue = currentDialogue.Choices[choiceIndex].NextDialogue;
 
-		if (nextDialogue == null) {
-			GameData.isConversing = false;
-			//npcData2.GetComponent<CharacterDataHandler>().talkTimer = 0;
-			this.transform.GetChild(0).gameObject.SetActive(false);
-		} else {
-			currentDialogue = nextDialogue;
+			if (nextDialogue == null) {
+				GameData.isConversing = false;
+				//npcData2.GetComponent<CharacterDataHandler>().talkTimer = 0;
+				this.transform.GetChild(0).gameObject.SetActive(false);
+			} else {
+				currentDialogue = nextDialogue;
 
-			clearChoices();
-			showText();
+				clearChoices();
+				showText();
+			}
 		}
 	}
 }

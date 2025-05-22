@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
+  m_Name: ControlDialogueGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: ControlDialogue
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: b6876f2b-4e7d-4fa3-858c-9caeb25ba2b3
+    <Name>k__BackingField: ControlsExplaination
+    <Text>k__BackingField: You can use <W,A,S,D> to move!
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: bf01e68a-1c5b-4110-8d6b-0f299959d645
+    <Character>k__BackingField: {fileID: 11400000, guid: b92a88c8e6e1efe4fbb68c0edff2dea7,
+      type: 2}
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 117, y: 224}
+  - <ID>k__BackingField: bf01e68a-1c5b-4110-8d6b-0f299959d645
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Pressing <Left Mouse> or <Right Mouse> will Attack and
+      defend respectively.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <Character>k__BackingField: {fileID: 11400000, guid: b92a88c8e6e1efe4fbb68c0edff2dea7,
+      type: 2}
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 463, y: 224}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - ControlsExplaination
+  - DialogueName
+  <OldGroupedNodeNames>k__BackingField:
+    list: []

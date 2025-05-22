@@ -55,7 +55,7 @@ public class DesktopInteraction : MonoBehaviour {
     }
 
     public bool IsSelectedWindowGame() {
-        return (lastSelectedObject != null && lastSelectedObject.name == "GameWindow(Clone)") || updatePlayerOverride;
+        return (lastSelectedObject != null && lastSelectedObject.name == "GameWindow(Clone)" && !GameData.isConversing) || updatePlayerOverride;
     }
     
     public static GameObject GetLastSelectedObject() {

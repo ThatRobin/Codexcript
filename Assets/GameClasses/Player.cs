@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -23,10 +25,12 @@ public class Player : GameScript {
     
     private PlayerStats playerStats;
     private IInteractable interactableObject;
+    private Animator animator;
     private void Awake() {
         playerControls = new PlayerControls();
         characterController = GetComponent<CharacterController>();
         playerStats = GetComponent<PlayerStats>();
+        animator = GetComponent<Animator>();
     }
     
     private void OnEnable() {
@@ -35,14 +39,19 @@ public class Player : GameScript {
         playerControls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         playerControls.Player.Move.canceled += ctx => moveInput = Vector2.zero;
 
-        playerControls.Player.Attack.performed += _ => Attack(playerStats.GetStat(Stats.DAMAGE));
-        playerControls.Player.Defend.performed += _ => Defend();
+        playerControls.Player.Attack.performed += _ => Attack();
+        playerControls.Player.Defend.performed += _ => {
+            Defend();
+            OnDefendStart();
+        };
+        playerControls.Player.Defend.canceled += _ => OnDefendEnd();
         
         playerControls.Player.Interact.performed += _ => Interact(interactableObject);
     }
 
     private void Interact(IInteractable interactable) {
-        interactable.Interact();
+        if(interactable != null) 
+            interactable.Interact();
     }
 
     public void OnTriggerEnter(Collider other) {
@@ -70,15 +79,20 @@ public class Player : GameScript {
         }
 
         isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundLayer);
-
-        if (isGrounded && velocity.y < 0) {
-            velocity.y = -2f;
-        }
-
+        
+        
+        velocity.y += gravity * Time.deltaTime;
+        
+        Tuple<float> gravityParameters = Tuple.Create(velocity.y);
+        velocity.y = ExecuteMethod("GetGravity", ref gravityParameters).Item1;
+        
         float speed = playerStats.GetStat(Stats.SPEED);
 
         Vector3 totalMovement = Move(speed);
 
+        Vector3 horizontalMovement = new Vector3(totalMovement.x, 0, totalMovement.z);
+        animator.SetBool("IsMoving", horizontalMovement.magnitude > 0);
+        
         characterController.Move(totalMovement * Time.deltaTime);
     }
 
@@ -94,11 +108,9 @@ public class Player : GameScript {
         Vector3 moveDirection = (forward * moveInput.y + right * moveInput.x).normalized;
 
         RotateTowardsMovementDirection(moveDirection);
-
-        velocity.y += gravity * Time.deltaTime;
-
-        Tuple<float> parameters = Tuple.Create(speed);
-        speed = ExecuteMethod("Move", ref parameters).Item1;
+        
+        Tuple<float> speedParameter = Tuple.Create(speed);
+        speed = ExecuteMethod("Move", ref speedParameter).Item1;
 
         return moveDirection * speed + velocity;
     }
@@ -110,21 +122,61 @@ public class Player : GameScript {
         }
     }
     
-    private void Attack(float damage) {
-        Debug.Log("Attack performed!");
-        
-        Tuple<float> parameters = Tuple.Create(damage);
-        damage = ExecuteMethod("Attack", ref parameters).Item1;
+    private void Attack() {
+        if(!DesktopInteraction.GetInstance().IsSelectedWindowGame()) return;
+        if (!animator.GetBool("IsAttacking")) {
+
+            animator.SetBool("IsAttacking", true);
+
+
+
+            StartCoroutine(CancelAttack());
+        }
     }
 
-    private void Defend() {
-        Debug.Log("Defend performed!");
-    }
-    
-    public void Defend(string name) {
-        Tuple<string> parameters = Tuple.Create(name);
-        name = ExecuteMethod("Defend", ref parameters).Item1;
+    IEnumerator CancelAttack() {
+        yield return new WaitForSeconds(0.3f);
+        animator.SetBool("IsAttacking", false);
     }
 
+    private void OnDefendStart() {
+        if(!DesktopInteraction.GetInstance().IsSelectedWindowGame()) return;
+        animator.SetBool("IsDefending", true);
+    }
+
+    private void OnDefendEnd() {
+        if(!DesktopInteraction.GetInstance().IsSelectedWindowGame()) return;
+        animator.SetBool("IsDefending", false);
+    }
     
+    public void Defend() {
+        if(!DesktopInteraction.GetInstance().IsSelectedWindowGame()) return;
+        //Tuple<string> parameters = Tuple.Create(name);
+        //name = ExecuteMethod("Defend", ref parameters).Item1;
+    }
+
+
+    public void SwordTriggerEnter(Collider other) {
+        if (other.CompareTag("Enemy") && animator.GetBool("IsAttacking")) {
+            float damage = playerStats.GetStat(Stats.DAMAGE);
+            
+            Tuple<float> parameters = Tuple.Create(damage);
+            damage = ExecuteMethod("Attack", ref parameters).Item1;
+            
+            other.GetComponent<EnemyHandler>().Hit(damage);
+        }
+    }
+    
+    /*
+using ModdingTools;
+using UnityEngine;
+
+[Injector("Player")]
+public class Test {
+	[Inject("GetGravity(float)")]
+	public static void Jump(ref float amount) {
+		amount = Mathf.Sin(Time.time) * 9.81f;
+	}
+}
+     */
 }
