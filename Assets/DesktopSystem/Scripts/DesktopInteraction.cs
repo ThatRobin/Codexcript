@@ -29,7 +29,6 @@ public class DesktopInteraction : MonoBehaviour {
                 StopCoroutine(deselectCoroutine);
             }
             selectedObject = gameObject;
-            Debug.Log("Selected " + selectedObject.name);
             if (gameObject != null) {
                 deselectCoroutine = StartCoroutine(DeselectAfterDelay(decayDelay));
             }

@@ -7,6 +7,10 @@ public class SceneLoader : MonoBehaviour {
 
     public bool useCollision;
 
+    public static void quit() {
+        Application.Quit();
+    }
+    
     public static void loadScene(string scene) {
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
     }

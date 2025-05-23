@@ -31,7 +31,6 @@ public class EnemyHandler : GameScript {
         animator = GetComponent<Animator>(); // cache the animator
         matInst = new Material(material); // create a new instance of material based on this enemies default material
         foreach(SkinnedMeshRenderer meshRenderer in GetComponentsInChildren<SkinnedMeshRenderer>()) {
-            Debug.Log(meshRenderer.gameObject.name);
             meshRenderer.sharedMaterial = matInst;
         }
         

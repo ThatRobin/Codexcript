@@ -24,7 +24,7 @@ public class Player : GameScript {
     private bool isGrounded;
     
     private PlayerStats playerStats;
-    private IInteractable interactableObject;
+    private Interactable interactableObject;
     private Animator animator;
     private void Awake() {
         playerControls = new PlayerControls();
@@ -49,14 +49,14 @@ public class Player : GameScript {
         playerControls.Player.Interact.performed += _ => Interact(interactableObject);
     }
 
-    private void Interact(IInteractable interactable) {
+    private void Interact(Interactable interactable) {
         if(interactable != null) 
             interactable.Interact();
     }
 
     public void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Interactable")) {
-            interactableObject = other.GetComponent<IInteractable>();
+            interactableObject = other.GetComponent<Interactable>();
         }
     }
     

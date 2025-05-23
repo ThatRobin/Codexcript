@@ -8,6 +8,7 @@ public class CamController : MonoBehaviour {
     Camera cam;
     RectTransform windowRectTransform;
     RectTransform rectTransform;
+    public GameObject WinScreen;
     void Start() {
         cam = Camera.main;
         windowRectTransform = this.transform.parent.parent.GetComponent<RectTransform>();
@@ -19,7 +20,14 @@ public class CamController : MonoBehaviour {
         height = windowRectTransform.rect.height;
     }
 
+    private bool HasWon;
+    
     void Update() {
+        if ((!GameData.isConversing) && Item.HasRelic() && !HasWon) {
+            HasWon = true;
+            WinScreen.SetActive(true);
+        }
+
         if (Mathf.Approximately(width, rectTransform.rect.width) &&
             Mathf.Approximately(height, rectTransform.rect.height)) return;
         
